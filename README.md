@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛍️ Product Management System
 
-## Getting Started
+A simple **Product Management System** built with **Next.js** where users can:
+- Add new products
+- View product details
+- Manage products easily
+- Use a secure login system before adding/viewing products
 
-First, run the development server:
+---
 
-```bash
+## 🚀 Live Demo
+👉 [Live Site Link](https://product-manager-ass.vercel.app/)
+
+## 💻 GitHub Repository
+👉 [GitHub Repo Link](https://github.com/developerTamanna/product-management)
+
+---
+
+## 📌 Features
+- 🔐 User Authentication (Login system)
+- ➕ Add Product
+- 📄 View Product Details
+- 📋 Product List Page
+- 🗂️ Organized Routes with Next.js App Router
+
+---
+
+## 🛠️ Tech Stack
+- **Frontend**: Next.js, React, Tailwind CSS
+- **Authentication**: JWT / NextAuth (যেটা ব্যবহার করেছো)
+- **Database**: MongoDB / MySQL (যেটা ব্যবহার করেছো)
+- **Hosting**: Vercel
+
+---
+
+## ⚙️ Setup & Installation
+
+1. Clone the repository
+   ```bash
+   git clone https://github.com/developerTamanna/product-management
+   cd product-management-system
+Install dependencies
+
+bash
+Copy
+Edit
+npm install
+Add your environment variables (.env.local)
+
+bash
+Copy
+Edit
+NEXT_PUBLIC_API_URL=your_api_url
+DATABASE_URL=your_database_url
+Run the development server
+
+bash
+Copy
+Edit
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Now open http://localhost:3000 in your browser.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📍 Route Summary
+/ → Home Page
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+/login → User Login
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+/products → Product List
 
-## Learn More
+/products/[id] → Product Details
 
-To learn more about Next.js, take a look at the following resources:
+/products/add → Add New Product
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
