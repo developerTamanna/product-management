@@ -21,13 +21,13 @@ export function ProductCard({ product }: ProductCardProps) {
     <Card className="h-full flex flex-col hover:shadow-lg transition-shadow">
       <CardHeader className="p-0">
         <div className="relative aspect-square overflow-hidden rounded-t-lg">
-          {/* <Image
+          <Image
             src={image}
             alt={product.name}
             fill
             priority
             className="object-cover"
-          /> */}
+          />
           {!product.inStock && (
             <div className="absolute top-2 right-2">
               <Badge variant="destructive">Out of Stock</Badge>
